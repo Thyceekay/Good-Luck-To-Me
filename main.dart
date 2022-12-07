@@ -1,20 +1,14 @@
-import "dart:math";
 
-void main() {
+import 'dart:ffi';
 
-  String randPass = '';
-  String letters = "abcdefghijklmnopqrstuvwxyz";
-  String numbers = "0123456789";
-  String special = "!@#%^&*()_+-=<>/?:{]`}";
-
-  for(int i=0;i<2;i++){
-    var randNr = new Random();
-    randPass += letters.split('')[randNr.nextInt(letters.length)];
-    randPass += numbers.split('')[randNr.nextInt(numbers.length)];
-    randPass += letters.toUpperCase().split('')[randNr.nextInt(letters.length)];
-    randPass += special.split('')[randNr.nextInt(special.length)];
-  }
-
-
-  print(randPass);
+void stringValidator(String Count1, String Count2) {
+  print('$Count1 with $Count2');
+  bool isEqual = Count1 == Count2;
+  print(isEqual);
+  bool isEqual1 = Count1 != Count2;
+  print(isEqual1);
 }
+void main() {
+  stringValidator("1gH2>", "Lit3b4%");
+}
+
