@@ -1,14 +1,19 @@
 
 import 'dart:io';
 
-void stringValidator(String Count1, String Count2) {
-  print('$Count1 with $Count2');
-  bool isEqual = Count1 == Count2;
-  print(isEqual);
-  bool isEqual1 = Count1 != Count2;
-  print(isEqual1);
+bool stringValidator(String string) {
+  return false;
+}
+bool isUpToSixCharacters(String string) {
+  if (string.length >= 6) {
+  return true;
+  }
+  return false;
+  
 }
 void main() {
-  stringValidator("1gH2>", "Lit3b4%");
+  stringValidator("1gH2>");
+  print(isUpToSixCharacters("String"));
+  
 }
 
