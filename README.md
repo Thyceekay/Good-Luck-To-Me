@@ -9,3 +9,5 @@ Write a password generator in Dart. Be creative with how you generate passwords 
 ## Task 2
 
 Implement a function that validate the correctness of a string
+
+completion of project 2 requirments... 
